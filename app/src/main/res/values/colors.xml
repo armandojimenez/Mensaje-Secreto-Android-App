@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Created by Armando Jimenez on 7/11/17 5:18 PM
+  ~ Copyright (c) 2017. All rights reserved.
+  ~
+  ~ Last modified 7/11/17 4:17 PM
+  ~
+  ~
+  -->
+
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303f9f</color>
+    <color name="colorAccent">#FF4081</color>
+</resources>

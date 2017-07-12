@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Created by Armando Jimenez on 7/11/17 4:18 PM
+  ~ Copyright (c) 2017. All rights reserved.
+  ~
+  ~ Last modified 7/11/17 4:17 PM
+  ~
+  ~
+  -->
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.arman.mensajessecretos.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <EditText
+        android:id="@+id/txtIn"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/imageView2"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="Ingresa el mensaje para codificar"
+        android:inputType="textMultiLine|textPersonName"
+        android:textStyle="bold"/>
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginEnd="33dp"
+        android:layout_marginRight="33dp"
+        android:layout_toLeftOf="@+id/txtKey"
+        android:max="26"
+        android:progress="26"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnEncode"
+        android:layout_alignBottom="@+id/btnEncode"
+        android:layout_toLeftOf="@+id/txtKey"
+        android:layout_toStartOf="@+id/txtKey"
+        android:fontFamily="sans-serif"
+        android:text="Llave"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/txtKey"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_toLeftOf="@+id/btnEncode"
+        android:layout_toStartOf="@+id/btnEncode"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="@android:color/holo_red_dark"/>
+
+    <Button
+        android:id="@+id/btnEncode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtOut"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="?attr/colorControlHighlight"
+        android:text="CODIFICAR/DECODIFICAR"
+        android:textColor="@android:color/black"
+        android:textSize="12sp"
+        android:textStyle="bold|italic"/>
+
+    <EditText
+        android:id="@+id/txtOut"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:ems="10"
+        android:inputType="textMultiLine|textPersonName"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/txtIn"
+        android:layout_alignStart="@+id/txtIn"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/security"
+        android:layout_below="@+id/txtOut"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"/>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/logo"/>
+
+    <TextView
+        android:id="@+id/lblDecode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtOut"
+        android:text="Llave para Decodificar:"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-13 al 13"
+        android:layout_below="@+id/txtKey"
+        android:layout_toLeftOf="@+id/btnEncode"
+        android:layout_toStartOf="@+id/btnEncode"
+        android:layout_marginRight="12dp"
+        android:layout_marginEnd="12dp"/>
+
+</RelativeLayout>

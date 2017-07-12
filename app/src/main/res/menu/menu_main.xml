@@ -1,0 +1,19 @@
+<!--
+  ~ Created by Armando Jimenez on 7/11/17 4:18 PM
+  ~ Copyright (c) 2017. All rights reserved.
+  ~
+  ~ Last modified 7/11/17 4:17 PM
+  ~
+  ~
+  -->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="com.example.arman.mensajessecretos.MainActivity">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never"/>
+</menu>
