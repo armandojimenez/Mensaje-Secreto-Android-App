@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">Mensajes Secretos</string>
     <string name="action_settings">Settings</string>
+    <string name="codificar_decodificar">CODIFICAR/DECODIFICAR</string>
+    <string name="_13_al_13">-13 al 13</string>
+    <string name="ingresa_el_mensaje_para_codificar">Ingresa el mensaje para codificar</string>
+    <string name="llave">Llave</string>
+    <string name="llave_para_decodificar">"Llave para Decodificar:  "</string>
+    <string name="appName">Mensaje Secreto</string>
 </resources>

@@ -25,7 +25,7 @@
         android:layout_below="@+id/imageView2"
         android:layout_centerHorizontal="true"
         android:ems="10"
-        android:hint="Ingresa el mensaje para codificar"
+        android:hint="@string/ingresa_el_mensaje_para_codificar"
         android:inputType="textMultiLine|textPersonName"
         android:textStyle="bold"/>
 
@@ -40,7 +40,8 @@
         android:layout_marginRight="33dp"
         android:layout_toLeftOf="@+id/txtKey"
         android:max="26"
-        android:progress="26"/>
+        android:progress="26"
+        tools:ignore="RtlHardcoded"/>
 
     <TextView
         android:id="@+id/textView2"
@@ -51,7 +52,7 @@
         android:layout_toLeftOf="@+id/txtKey"
         android:layout_toStartOf="@+id/txtKey"
         android:fontFamily="sans-serif"
-        android:text="Llave"
+        android:text="@string/llave"
         android:textSize="18sp"
         android:textStyle="bold"/>
 
@@ -65,7 +66,9 @@
         android:layout_toStartOf="@+id/btnEncode"
         android:ems="10"
         android:inputType="number"
-        android:textColor="@android:color/holo_red_dark"/>
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_red_dark"
+        android:textStyle="bold"/>
 
     <Button
         android:id="@+id/btnEncode"
@@ -77,7 +80,7 @@
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:background="?attr/colorControlHighlight"
-        android:text="CODIFICAR/DECODIFICAR"
+        android:text="@string/codificar_decodificar"
         android:textColor="@android:color/black"
         android:textSize="12sp"
         android:textStyle="bold|italic"/>
@@ -86,11 +89,11 @@
         android:id="@+id/txtOut"
         android:layout_width="300dp"
         android:layout_height="100dp"
-        android:ems="10"
-        android:inputType="textMultiLine|textPersonName"
-        android:layout_centerVertical="true"
         android:layout_alignLeft="@+id/txtIn"
-        android:layout_alignStart="@+id/txtIn"/>
+        android:layout_alignStart="@+id/txtIn"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:inputType="textMultiLine|textPersonName"/>
 
     <ImageView
         android:id="@+id/imageView"
@@ -99,7 +102,9 @@
         app:srcCompat="@drawable/security"
         android:layout_below="@+id/txtOut"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="23dp"/>
+        android:layout_marginTop="23dp"
+        android:contentDescription=""
+        tools:ignore="ContentDescription"/>
 
     <ImageView
         android:id="@+id/imageView2"
@@ -107,7 +112,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        app:srcCompat="@drawable/logo"/>
+        app:srcCompat="@drawable/logo"
+        tools:ignore="ContentDescription"/>
 
     <TextView
         android:id="@+id/lblDecode"
@@ -118,7 +124,7 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/txtOut"
-        android:text="Llave para Decodificar:"
+        android:text="@string/llave_para_decodificar"
         android:textAlignment="center"
         android:textSize="18sp"
         android:textStyle="bold"/>
@@ -127,11 +133,22 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="-13 al 13"
+        android:text="@string/_13_al_13"
         android:layout_below="@+id/txtKey"
         android:layout_toLeftOf="@+id/btnEncode"
         android:layout_toStartOf="@+id/btnEncode"
         android:layout_marginRight="12dp"
         android:layout_marginEnd="12dp"/>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-3802992379133652/9585506525"/>
+
 
 </RelativeLayout>

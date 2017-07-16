@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Created by Armando Jimenez on 7/15/17 9:43 PM
+  ~ Copyright (c) 2017. All rights reserved.
+  ~
+  ~ Last modified 7/15/17 9:43 PM
+  ~
+  ~
+  -->
+
+<resources>
+    <string name="app_name">Secret Messages</string>
+    <string name="_13_al_13">-13 to 13</string>
+    <string name="codificar_decodificar">CODE/DECODE</string>
+    <string name="ingresa_el_mensaje_para_codificar">Enter the message to code</string>
+    <string name="llave">Key</string>
+    <string name="llave_para_decodificar">"Key to decode: "</string>
+    <string name="action_settings">Configuracion</string>
+    <string name="appName">Sectret Messages</string>
+</resources>

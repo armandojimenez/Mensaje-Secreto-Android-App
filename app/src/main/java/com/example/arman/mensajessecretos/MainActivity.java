@@ -21,6 +21,11 @@ import android.widget.EditText;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -31,6 +36,8 @@ public class MainActivity extends AppCompatActivity {
     SeekBar sb;
     Button button;
     TextView lblDecode;
+    private AdView mAdView;
+
 
     public String encode(String message, int k) {
 
@@ -83,6 +90,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        MobileAds.initialize(this, "ca-app-pub-3802992379133652~8108773320");
+        mAdView = (AdView) findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -103,7 +115,7 @@ public class MainActivity extends AppCompatActivity {
                 int progress = key + 13;
                 int keyDecode = key - (key * 2);
 
-                lblDecode.setText("Llave para Decodificar: " + keyDecode + ".");
+                lblDecode.setText(getString(R.string.llave_para_decodificar) + keyDecode + ".");
 
                 String message = txtIn.getText().toString();
                 String out = encode(message, key);
@@ -130,7 +142,7 @@ public class MainActivity extends AppCompatActivity {
 
                 int keyDecode = key - (key * 2);
 
-                lblDecode.setText("Llave para Decodificar: " + keyDecode + ".");
+                lblDecode.setText(getString(R.string.llave_para_decodificar) + keyDecode + ".");
 
 
             }
